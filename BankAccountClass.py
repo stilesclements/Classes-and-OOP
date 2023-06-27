@@ -8,20 +8,20 @@ class BankAccount:
 # the __balance attribute.
 
     def __init__(self, bal):
-        self.__balance = bal
+        self.balance = bal
 
       # The deposit method makes a deposit into the
       # account.
 
     def deposit(self, amount):
-        self.__balance += amount
+        self.balance += amount
 
       # The withdraw method withdraws an amount
       # from the account.
 
     def withdraw(self, amount):
-        if self.__balance >= amount:
-            self.__balance -= amount
+        if self.balance >= amount:
+            self.balance -= amount
         else:
             print('Error: Insufficient funds')
 
@@ -29,7 +29,7 @@ class BankAccount:
       # account balance.
 
     def get_balance(self):
-        return self.__balance
+        return self.balance
 
 
 
