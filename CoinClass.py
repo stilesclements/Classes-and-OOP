@@ -26,3 +26,5 @@ class Coin:
 
     def get_sideup(self):
             return self.sideup
+#accesor methods are get methods that return a specific attribute
+#set method or mutator method changed the value of an object
