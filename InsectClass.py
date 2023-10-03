@@ -12,3 +12,5 @@ class Insect:
 
     def get_flight_length(self):
         return self.flight_length
+    def get_name(self):
+        return self.name

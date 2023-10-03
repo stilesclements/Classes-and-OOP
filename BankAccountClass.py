@@ -13,13 +13,17 @@ class BankAccount:
       # The deposit method makes a deposit into the
       # account.
 
-    def deposit(self, amount):
+    def deposit(self, amount):      #Mutator Method
         self.balance += amount
 
       # The withdraw method withdraws an amount
       # from the account.
 
-    def withdraw(self, amount):
+    def withdraw(self, amount):   #Mutator Method
+        if abs(amount)>self.balance:
+            print("Insufficient Funds")
+        else: 
+          self.balance-=abs(amount)
 
 
       # The get_balance method returns the
@@ -30,5 +34,5 @@ class BankAccount:
 
 
 
-    def __str__(self):
-        return 'The balance is $' + format(self.__balance, ',.2f')
+    #def __str__(self):
+        #return 'The balance is $' + format(self.__balance, ',.2f')
